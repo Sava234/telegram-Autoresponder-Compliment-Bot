@@ -27,6 +27,7 @@ Run the script:
     python3 sender.py
 
 During the first run, you'll be prompted to enter your phone number and a verification code. If two-factor authentication is enabled, you’ll also need your password.
+
 🧠 How It Works
 autoreply — replies if the last message was from the user.
 autoreply_once — sends one reply per user, no repeats.
