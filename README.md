@@ -9,22 +9,22 @@ ompliment — sends compliments when a user comes online or was recently online.
 
 🛠 Installation
 
-         pip install telethon
+    pip install telethon
 
 🚀 Getting Started
 
 Set your Telegram API credentials at the top of the script:
 
-          api_id_x = 12345678
-          api_hash_x = 'your_api_hash_here'
+    api_id_x =  your_api_id_here
+    api_hash_x = 'your_api_hash_here'
  
  Choose the desired mode:
 
-           MODE = 'autoreply'  # Options: 'autoreply', 'autoreply_once', 'autoreply_timed', 'compliment'
+    MODE = 'autoreply'  # Options: 'autoreply', 'autoreply_once', 'autoreply_timed', 'compliment'
 
 Run the script:
                            
-                python your_script.py
+    python3 sender.py
 
 During the first run, you'll be prompted to enter your phone number and a verification code. If two-factor authentication is enabled, you’ll also need your password.
 🧠 How It Works
@@ -37,19 +37,19 @@ compliment — watches for selected users to come online and sends a random comp
 
 Reply timeout for autoreply_timed mode:
 
-           REPLY_TIMEOUT = 60 * 60 * 24  # 24 hours
+    REPLY_TIMEOUT = 60 * 60 * 24  # 24 hours
 
 Customize reply and compliment texts:
 
-              autoreply_templates = [...]
-              compliments_list = [...]
+    autoreply_templates = [...]
+    compliments_list = [...]
 
 Set target users for compliment mode:
 
-                            targets = [
-                                   {'type': 'username', 'value': '@username1'},
-                          {'type': 'id', 'value': 123456789},
-                        ]
+    targets = [
+          {'type': 'username', 'value': '@username1'},
+          {'type': 'id', 'value': 123456789},
+       ]
 
 ❗ Notes
 Only works in private chats (not groups or channels).
